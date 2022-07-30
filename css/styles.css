@@ -1,0 +1,166 @@
+@font-face {
+    font-family: "Minimal Mono";
+    font-weight: 100;
+    src: url("../fonts/Minimal-Mono/Minimal-Mono-Regular_0.otf");
+}
+
+@font-face {
+    font-family: "Minimal Mono";
+    font-weight: 300;
+    src: url("../fonts/Minimal-Mono/Minimal-Mono-Bold_0.otf");
+}
+
+@font-face {
+    font-family: "Minimal Mono";
+    font-weight: 500;
+    src: url("../fonts/Minimal-Mono/Minimal-Mono-Black_0.otf");
+}
+
+@font-face {
+    font-family: "Bank Printer Regular";
+    src: url("../fonts/Bank-Printer/F25_Bank_Printer.otf");
+}
+
+@font-face {
+    font-family: "Verily Serif Mono";
+    src: url("../fonts/Verily-Serif-Mono/VerilySerifMono.otf");
+}
+
+::selection {
+    background: #dbdbe5;
+}
+
+
+.container-fluid {
+    padding: 0 4%;
+}
+
+body {
+    --page-color: #E5E5DB;
+    background-color: var(--page-color);
+}
+
+#sidebar {
+    padding: 0;
+}
+
+#logo {
+    cursor: grab;
+}
+
+.nav-link {
+    font-family: "Minimal Mono";
+    font-weight: 100;
+}
+
+.active {
+    color: var(--text-color-dark);
+    font-weight: 300;
+    cursor: not-allowed;
+}
+
+i {
+    color: #181717;
+}
+
+i:hover {
+    color: #989891;
+}
+
+.nav-link:hover {
+    text-decoration: line-through;
+    font-weight: 300;
+}
+
+.active:hover {
+    text-decoration: none;
+}
+
+.social-icons {
+    margin: 1rem 0;
+}
+
+.social-button {
+    color: #4b4b48;
+}
+
+.social-button:hover {
+    color: #989891;
+}
+
+#content {
+    padding-left: 10%;
+    padding-right: 10%;
+}
+
+.photograph {
+    display: block;
+    width: 100%;
+    /* margin: 0 auto; */
+}
+
+.photograph-div {
+    padding:16px;
+    margin-bottom: 50px;
+    background-color: whitesmoke;
+}
+
+p {
+    --text-color-dark: #181717;
+    color: var(--text-color-dark);
+    margin: 16px 0;
+    font-family: "Verily Serif Mono";
+}
+
+.sneaky-link {
+    color: var(--text-color-dark);
+    text-decoration: none;
+}
+
+.sneaky-link:hover {
+    color: var(--text-color-dark);
+    text-decoration: line-through;
+}
+
+.story {
+    margin: 16px 0 0 0;
+}
+
+.image-specs {
+    margin-top: 2px;
+    color: var(--text-color-dark);
+    opacity: 0.5;
+    font-size: smaller;
+    font-family: "Minimal Mono";
+    font-style: oblique;
+    font-weight: 100;
+}
+
+h1 {
+    color: var(--text-color-dark);
+    font-family: "Minimal Mono";
+    font-weight: 300;
+}
+
+li {
+    color: var(--text-color-dark);
+    font-family: "Verily Serif Mono";
+}
+
+#copyright {
+    background-color: #D0D0BD;
+    color: var(--text-color-dark);
+    font-family: "Minimal Mono";
+    font-size: smaller;
+    font-weight: 100;
+}
+
+a {
+    color: #f5a30a;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #f8be54;
+    text-decoration: line-through;
+}
