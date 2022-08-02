@@ -164,3 +164,9 @@ a:hover {
     color: #f8be54;
     text-decoration: line-through;
 }
+
+.photograph-btn {
+    padding: 0;
+    border: 0;
+    margin: 0;
+}
