@@ -130,13 +130,21 @@ p {
     margin-top: 2px;
     color: var(--text-color-dark);
     opacity: 0.5;
-    font-size: smaller;
     font-family: "Minimal Mono";
-    font-style: oblique;
+    font-size: smaller;
     font-weight: 100;
+    font-style: oblique;
 }
 
 h1 {
+    color: var(--text-color-dark);
+    font-family: "Minimal Mono";
+    font-weight: 300;
+}
+
+/* for some reason making the css with h1 and h5 together breaks the code. find a fix for it */
+
+h5 {
     color: var(--text-color-dark);
     font-family: "Minimal Mono";
     font-weight: 300;
@@ -169,4 +177,19 @@ a:hover {
     padding: 0;
     border: 0;
     margin: 0;
+    width: 100%;
+}
+
+.modal {
+    --bs-modal-border-radius: 0;
+}
+
+.modal-header {
+    padding-bottom: 0;
+    border: 0;
+}
+
+.modal-footer {
+    padding-top: 0;
+    border: 0;
 }

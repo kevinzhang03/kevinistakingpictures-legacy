@@ -123,8 +123,85 @@
 					<article>
 						<h1>welcome to the blog</h1>
 						<p>There absolutely nothing here. Now leave and look at my pictures.</p>
-						<br />
 						<p>This is just a test, but I made this change from my Mac.</p>
+						<p>
+							The test seemed to work, and now I'm in a different branch. This will be used to implement
+							my modal window idea for the photographs.
+						</p>
+						<br />
+						<hr />
+						<br />
+
+						<!-- Button trigger modal -->
+						<!-- <button
+							type="button"
+							class="btn btn-danger"
+							data-bs-toggle="modal"
+							data-bs-target="#toronto-streetcar"
+						>
+							A red streetcar riding the rails on a rainy Toronto night.
+						</button> -->
+
+						<div class="photograph-div">
+							<button
+								type="button"
+								class="photograph-btn"
+								data-bs-toggle="modal"
+								data-bs-target="#toronto-streetcar"
+								class="photograph-btn"
+							>
+								<img src="./photographs/smaller/Midnight Dundas-7797-smaller.JPG" class="photograph" />
+							</button>
+							<p class="image-specs">85mm, f/3.5, 1/100s, ISO 1100</p>
+							<p class="story">
+								Probably my favourite shot out of the bunch. The soft background, the contrast betwen
+								the red streetcar and the blue lights, the lines of rain being illumiated by the
+								headlights, the reflective road from being wet -- so much went right for me to get this
+								picture and I love it.
+							</p>
+						</div>
+
+						<!-- Modal -->
+						<div
+							class="modal fade"
+							id="toronto-streetcar"
+							tabindex="-1"
+							aria-labelledby="exampleModalLabel"
+							aria-hidden="true"
+						>
+							<!-- This is where you put in the extra classes and shit -->
+							<div class="modal-dialog modal-dialog-centered modal-xl">
+								<div class="modal-content">
+									<div class="modal-header">
+										<h5 class="modal-title" id="exampleModalLabel">
+											A red streetcar riding the rails on a rainy Toronto night.
+										</h5>
+										<button
+											type="button"
+											class="btn-close"
+											data-bs-dismiss="modal"
+											aria-label="Close"
+										></button>
+									</div>
+									<div class="modal-body">
+										<img
+											src="./photographs/full-sized/Midnight Dundas-7797.JPG"
+											class="photograph"
+											alt="A red streetcar riding on a rainy Toronto night."
+										/>
+									</div>
+									<div class="modal-footer justify-content-start">
+										<p class="image-specs">85mm, f/3.5, 1/100s, ISO 1100</p>
+										<p class="story">
+											Probably my favourite shot out of the bunch. The soft background, the
+											contrast betwen the red streetcar and the blue lights, the lines of rain
+											being illumiated by the headlights, the reflective road from being wet -- so
+											much went right for me to get this picture and I love it.
+										</p>
+									</div>
+								</div>
+							</div>
+						</div>
 					</article>
 				</main>
 			</div>
