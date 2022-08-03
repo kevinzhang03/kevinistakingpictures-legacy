@@ -184,6 +184,11 @@ a:hover {
     --bs-modal-border-radius: 0;
 }
 
+.modal-dialog {
+    /* width: 80%; */
+    max-width: 80%;
+}
+
 .modal-header {
     padding-bottom: 0;
     border: 0;
