@@ -67,6 +67,11 @@ body {
     font-weight: 100;
 }
 
+.nav-link:hover {
+    text-decoration: line-through;
+    font-weight: 300;
+}
+
 .active {
     color: var(--text-color-dark);
     font-weight: 300;
@@ -79,11 +84,6 @@ i {
 
 i:hover {
     color: #989891;
-}
-
-.nav-link:hover {
-    text-decoration: line-through;
-    font-weight: 300;
 }
 
 .active:hover {
@@ -201,6 +201,10 @@ a:hover {
     margin-right: auto;
 }
 
+.modal-content {
+    background-color: whitesmoke;
+}
+
 .modal-header {
     padding-bottom: 0;
     border: 0;
@@ -209,4 +213,24 @@ a:hover {
 .modal-footer {
     padding-top: 0;
     border: 0;
+}
+
+.download-image-a, .download-image-a:hover {
+    color: var(--text-color-dark);
+}
+
+.download-image-btn {
+    background-color: var(--page-color);
+    color: var(--text-color-dark);
+    font-family: "Minimal Mono";
+    font-weight: 100;
+    padding: 8px;
+    border: 0;
+    margin: 0;
+}
+
+.download-image-btn:hover {
+    background-color: #D0D0BD;
+    text-decoration: line-through;
+    font-weight: 300;
 }
