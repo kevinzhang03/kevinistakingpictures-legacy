@@ -34,32 +34,32 @@
 		<div class="container-fluid">
 			<div class="row min-vh-100 flex-column flex-md-row">
 				<aside class="col-12 col-md-2 p-0 flex-shrink-1">
-					<!-- This is the actual navbar. Try to make its position stick -->
 					<nav
-						class="navbar navbar-expand-md flex-md-column flex-row align-items-end text-center text-md-end stick-top"
+						class="navbar navbar-expand-md flex-md-column flex-row align-items-end text-center text-md-end p-3 p-md-0 sticky-top"
 						id="sidebar"
 					>
-						<div class="text-center p-3">
+						<div class="text-center d-none d-md-block p-3">
 							<a href="/" class="navbar-brand-mx=0 font-weight-bold text-nowrap">
 								<img
 									id="logo"
 									title="oh hey it's me"
 									src="./images/me-square-500px.jpg"
 									alt="me holding a camera"
-									width="100px"
+									width="100%"
 								/>
 							</a>
 						</div>
 						<button
 							type="button"
-							class="navbar-toggler border-0 order-1"
+							class="btn navbar-toggler border-0 order-1 m-3 p-2"
 							data-bs-toggle="collapse"
 							data-bs-target="#nav"
 							aria-controls="nav"
 							aria-expanded="false"
 							aria-label="Toggle navigation"
 						>
-							<span class="navbar-toggler-icon"></span>
+							<!-- <span class="navbar-toggler-icon"></span> -->
+							<i class="fa-solid fa-circle-chevron-up"></i>
 						</button>
 						<div class="collapse navbar-collapse prder-last" id="nav">
 							<ul class="navbar-nav flex-column w-100 justify-content-center">

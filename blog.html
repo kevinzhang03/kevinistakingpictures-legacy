@@ -3,7 +3,7 @@
 	<head>
 		<meta charset="utf-8" />
 		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
-		<title>about kevin</title>
+		<title>experimental stuff</title>
 		<link rel="icon" href="./images/me-square.jpg" type="image/x-icon" />
 		<meta name="description" content="" />
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -30,35 +30,36 @@
 		<link rel="stylesheet" href="./css/styles.css" />
 	</head>
 	<body>
-		<div class="p-md-5"></div>
+		<div class="p-2 p-md-5"></div>
 		<div class="container-fluid">
 			<div class="row min-vh-100 flex-column flex-md-row">
 				<aside class="col-12 col-md-2 p-0 flex-shrink-1">
 					<nav
-						class="navbar navbar-expand-md flex-md-column flex-row align-items-end text-center text-md-end stick-top"
+						class="navbar navbar-expand-md flex-md-column flex-row align-items-end text-center text-md-end sticky-top"
 						id="sidebar"
 					>
-						<div class="text-center p-3">
+						<div class="text-center d-none d-md-block p-3">
 							<a href="/" class="navbar-brand-mx=0 font-weight-bold text-nowrap">
 								<img
 									id="logo"
 									title="oh hey it's me"
 									src="./images/me-square-500px.jpg"
 									alt="me holding a camera"
-									width="100px"
+									width="100%"
 								/>
 							</a>
 						</div>
 						<button
 							type="button"
-							class="navbar-toggler border-0 order-1"
+							class="btn navbar-toggler border-0 order-1 m-3 p-2"
 							data-bs-toggle="collapse"
 							data-bs-target="#nav"
 							aria-controls="nav"
 							aria-expanded="false"
 							aria-label="Toggle navigation"
 						>
-							<span class="navbar-toggler-icon"></span>
+							<!-- <span class="navbar-toggler-icon"></span> -->
+							<i class="fa-solid fa-circle-chevron-up"></i>
 						</button>
 						<div class="collapse navbar-collapse prder-last" id="nav">
 							<ul class="navbar-nav flex-column w-100 justify-content-center">
@@ -121,10 +122,178 @@
 				</aside>
 				<main class="col py-3 flex-grow-1" id="content">
 					<article>
-						<h1>welcome to the blog</h1>
-						<p>There absolutely nothing here. Now leave and look at my pictures.</p>
+						<h1>okay this is no longer the blog</h1>
+						<p>
+							I think for now I'm just gonna put all of my experiemtal feature of the site right here.
+							This is mainly just for my use as a developer, but there's nothing stopping you from playing
+							around with this shit.
+						</p>
+						<p>
+							No, I'm not gonna bother changing the navbar to relfect this change. Can't find the shits to
+							give.
+						</p>
+						<p>Changes here that I made or what is planned to be implemented in the future:</p>
+						<ul>
+							<li>
+								<b>Updated the design for the top navbar in mobile viewports</b>
+							</li>
+							<li>
+								<b
+									>Updated the sizing for my icon and also made the side navigation in the desktop
+									viewport sticky! Basically, you will always see the side nav even if you scroll
+									down</b
+								>
+								<ul>
+									<li>Trying to do the same for mobile, but it just isn't working...</li>
+								</ul>
+							</li>
+							<li>
+								<b>
+									Made the images on the regular gallery clickable! Now a popup appears, showing you
+									the full-res version of the image.
+								</b>
+								<ul>
+									<li>
+										I want to make the popup be roughly 80% of your port width no matter what, but
+										I'm also simultaneously trying to make the popup fullscreen in mobile view. So
+										far, that has shown some issues regarding the width and margin. Looking into
+										that...
+									</li>
+								</ul>
+							</li>
+							<li><b>Make an actual, functioning blog lol</b></li>
+						</ul>
 						<br />
-						<p>This is just a test, but I made this change from my Mac.</p>
+						<hr />
+						<br />
+
+						<!-- Pic and button for TTC -->
+						<div class="photograph-div">
+							<button
+								type="button"
+								class="photograph-btn"
+								data-bs-toggle="modal"
+								data-bs-target="#toronto-streetcar"
+								class="photograph-btn"
+							>
+								<img src="./photographs/smaller/Midnight Dundas-7797-smaller.JPG" class="photograph" />
+							</button>
+							<p class="image-specs">85mm, f/3.5, 1/100s, ISO 1100</p>
+							<p class="story">
+								Probably my favourite shot out of the bunch. The soft background, the contrast betwen
+								the red streetcar and the blue lights, the lines of rain being illumiated by the
+								headlights, the reflective road from being wet — so much went right for me to get this
+								picture and I love it.
+							</p>
+						</div>
+						<!-- Modal for TTC shot -->
+						<div
+							class="modal fade"
+							id="toronto-streetcar"
+							tabindex="-1"
+							aria-labelledby="exampleModalLabel"
+							aria-hidden="true"
+						>
+							<!-- This is where you put in the extra classes and shit -->
+							<div class="modal-dialog modal-dialog-centered modal-xl">
+								<div class="modal-content">
+									<div class="modal-header">
+										<h5 class="modal-title" id="exampleModalLabel">Midnight Express</h5>
+										<button
+											type="button"
+											class="btn-close"
+											data-bs-dismiss="modal"
+											aria-label="Close"
+										></button>
+									</div>
+									<div class="modal-body">
+										<img
+											src="./photographs/full-sized/Midnight Dundas-7797.JPG"
+											class="photograph"
+											alt="A red streetcar riding on a rainy Toronto night."
+										/>
+									</div>
+									<div class="modal-footer justify-content-start">
+										<p class="image-specs">85mm, f/3.5, 1/100s, ISO 1100</p>
+										<p class="story">
+											Probably my favourite shot out of the bunch. The soft background, the
+											contrast betwen the red streetcar and the blue lights, the lines of rain
+											being illumiated by the headlights, the reflective road from being wet — so
+											much went right for me to get this picture and I love it.
+										</p>
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<!-- Pic and button for Icha Tea -->
+						<div class="photograph-div">
+							<button
+								type="button"
+								class="photograph-btn"
+								data-bs-toggle="modal"
+								data-bs-target="#icha-tea-storefont"
+								class="photograph-btn"
+							>
+								<img
+									src="./photographs/smaller/Meetup Spadina and Grange-1930-smaller.JPG"
+									class="photograph"
+								/>
+							</button>
+							<p class="image-specs">26mm, f/4, 1/1250s, ISO 500</p>
+							<p class="story">
+								Icha Tea. It's a neat little bubble tea shop on Spadina. Their prices are a bit higher
+								but the interior vibe perfectly reflects the premium. They even have a little space for
+								you to drink your tea and order desserts in way in the back. Thankfully, I don't think
+								all the money has been put into the design of the shop; I had their chrysanthemum pu er
+								tea, and I was pleasantly reminded of the familiar taste of chrysanthemum with just the
+								right compliment of bitterness. Their signature strawberry matcha is also popular among
+								guests, but I never got to try it yet.
+							</p>
+						</div>
+						<!-- Modal for Icha Tea shot -->
+						<div
+							class="modal fade"
+							id="icha-tea-storefont"
+							tabindex="-1"
+							aria-labelledby="exampleModalLabel"
+							aria-hidden="true"
+						>
+							<!-- This is where you put in the extra classes and shit -->
+							<div class="modal-dialog modal-dialog-centered modal-xl modal-fullscreen-md-down">
+								<div class="modal-content">
+									<div class="modal-header">
+										<h5 class="modal-title" id="exampleModalLabel">All about tea</h5>
+										<button
+											type="button"
+											class="btn-close"
+											data-bs-dismiss="modal"
+											aria-label="Close"
+										></button>
+									</div>
+									<div class="modal-body">
+										<img
+											src="./photographs/full-sized/Meetup Spadina and Grange-1930.JPG"
+											class="photograph"
+											alt="A red streetcar riding on a rainy Toronto night."
+										/>
+									</div>
+									<div class="modal-footer justify-content-start">
+										<p class="image-specs">26mm, f/4, 1/1250s, ISO 500</p>
+										<p class="story">
+											Icha Tea. It's a neat little bubble tea shop on Spadina. Their prices are a
+											bit higher but the interior vibe perfectly reflects the premium. They even
+											have a little space for you to drink your tea and order desserts in way in
+											the back. Thankfully, I don't think all the money has been put into the
+											design of the shop; I had their chrysanthemum pu er tea, and I was
+											pleasantly reminded of the familiar taste of chrysanthemum with just the
+											right compliment of bitterness. Their signature strawberry matcha is also
+											popular among guests, but I never got to try it yet.
+										</p>
+									</div>
+								</div>
+							</div>
+						</div>
 					</article>
 				</main>
 			</div>
