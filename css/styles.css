@@ -46,6 +46,20 @@ body {
 
 #logo {
     cursor: grab;
+    max-width: 200px;
+}
+
+.fa-solid {
+    transition: 0.3s transform ease-in-out;
+}
+
+.btn:focus, .btn:active:focus {
+    outline: none;
+    box-shadow: none;
+}
+
+.collapsed .fa-solid {
+    transform: rotate(180deg)
 }
 
 .nav-link {
@@ -96,7 +110,11 @@ i:hover {
 .photograph {
     display: block;
     width: 100%;
-    /* margin: 0 auto; */
+    user-select: none;
+    -moz-user-select: none;
+    -webkit-user-drag: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
 }
 
 .photograph-div {
@@ -134,17 +152,10 @@ p {
     font-size: smaller;
     font-weight: 100;
     font-style: oblique;
+    user-select: none;
 }
 
-h1 {
-    color: var(--text-color-dark);
-    font-family: "Minimal Mono";
-    font-weight: 300;
-}
-
-/* for some reason making the css with h1 and h5 together breaks the code. find a fix for it */
-
-h5 {
+h1, h2, h3, h4, h5, h6 {
     color: var(--text-color-dark);
     font-family: "Minimal Mono";
     font-weight: 300;
@@ -185,8 +196,9 @@ a:hover {
 }
 
 .modal-dialog {
-    /* width: 80%; */
     max-width: 80%;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .modal-header {
