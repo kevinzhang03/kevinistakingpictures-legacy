@@ -27,7 +27,8 @@
 }
 
 ::selection {
-    background: #dbdbe5;
+    /* background: #dbdbe5; */
+    background: #7469d64b;
 }
 
 
@@ -237,6 +238,11 @@ a:hover {
 
 .carousel {
     margin: 1rem 0;
+}
+
+/* this is necessary because the .active class has a not-allowed cursor hover state from the nav. find a more elegant workaround? */
+.carousel-item:hover {
+    cursor: default;
 }
 
 .carousel-caption-text {
