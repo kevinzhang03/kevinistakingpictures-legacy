@@ -135,7 +135,7 @@ i:hover {
 p {
     --text-color-dark: #181717;
     color: var(--text-color-dark);
-    margin: 16px 0;
+    margin: 1rem 0;
     font-family: "Verily Serif Mono";
 }
 
@@ -150,7 +150,7 @@ p {
 }
 
 .story {
-    margin: 16px 0 0 0;
+    margin: 1rem 0 0 0;
 }
 
 .image-specs {
@@ -166,6 +166,7 @@ p {
 
 h1, h2, h3, h4, h5, h6 {
     color: var(--text-color-dark);
+    margin: 1rem 0;
     font-family: "Minimal Mono";
     font-weight: 300;
 }
@@ -245,7 +246,16 @@ a:hover {
 }
 
 .carousel {
-    margin: 1rem 0;
+    margin: 1rem auto;
+    width: 80%;
+}
+
+.carousel-control-prev:hover {
+    cursor: w-resize;
+}
+
+.carousel-control-next:hover {
+    cursor: e-resize;
 }
 
 /* this is necessary because the .active class has a not-allowed cursor hover state from the nav. find a more elegant workaround? */
