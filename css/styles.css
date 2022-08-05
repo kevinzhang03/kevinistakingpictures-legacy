@@ -41,6 +41,14 @@ body {
     background-color: var(--page-color);
 }
 
+.error-message-404 {
+    text-align: center !important;
+}
+
+#num-404 {
+    font-size: 8vmax;
+}
+
 #sidebar {
     padding: 0;
 }
