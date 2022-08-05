@@ -234,3 +234,12 @@ a:hover {
     text-decoration: line-through;
     font-weight: 300;
 }
+
+.carousel {
+    margin: 1rem 0;
+}
+
+.carousel-caption-text {
+    --bs-bg-opacity: 0.5;
+    font-family: "Verily Serif Mono";
+}
