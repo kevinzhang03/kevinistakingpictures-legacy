@@ -247,16 +247,16 @@ a:hover {
 
 .carousel {
     margin: 1rem auto;
-    width: 80%;
+    /* width: 90%; */
 }
 
-.carousel-control-prev:hover {
+/* .carousel-control-prev:hover {
     cursor: w-resize;
 }
 
 .carousel-control-next:hover {
     cursor: e-resize;
-}
+} */
 
 /* this is necessary because the .active class has a not-allowed cursor hover state from the nav. find a more elegant workaround? */
 .carousel-item:hover {
@@ -266,4 +266,5 @@ a:hover {
 .carousel-caption-text {
     --bs-bg-opacity: 0.5;
     font-family: "Verily Serif Mono";
+    font-size: 0.75vmax;
 }
