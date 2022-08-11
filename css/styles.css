@@ -26,6 +26,11 @@
     src: url("../fonts/Verily-Serif-Mono/VerilySerifMono.otf");
 }
 
+@font-face {
+    font-family: "Cousine";
+    src: url("../fonts/Cousine/Cousine-Regular.ttf");
+}
+
 ::selection {
     /* background: #dbdbe5; */
     background: #7469d64b;
@@ -137,6 +142,15 @@ p {
     color: var(--text-color-dark);
     margin: 1rem 0;
     font-family: "Verily Serif Mono";
+}
+
+code {
+    padding: 0.15rem;
+    border-radius: 2px;
+    background-color: #d0d0bd;
+    /* color: var(--text-color-dark); */
+    /* font-size: 1rem; */
+    font-family: "Cousine";
 }
 
 .sneaky-link {
